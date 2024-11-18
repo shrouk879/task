@@ -1,0 +1,30 @@
+﻿<Window x:Class="taskmange.winmange"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:taskmange"
+        mc:Ignorable="d"
+        Title="winmange" Height="450" Width="800">
+    <Grid Background="#FF9DC7C7">
+        <TextBox Name="txttitle" HorizontalAlignment="Left" Height="44" Margin="98,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140"/>
+        <TextBox Name="txtdescription" HorizontalAlignment="Left" Margin="428,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Height="44"/>
+        <TextBox Name="txtdate" HorizontalAlignment="Left" Margin="427,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Height="44"/>
+        <Label Content="Descroption :" HorizontalAlignment="Left" Margin="340,57,0,0" VerticalAlignment="Top"/>
+        <Label Content="Data :" HorizontalAlignment="Left" Margin="360,142,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.739,0.695"/>
+        <Label Content="Title :" HorizontalAlignment="Left" Margin="46,49,0,0" VerticalAlignment="Top"/>
+        <Label Content="Statues :" HorizontalAlignment="Left" Margin="46,142,0,0" VerticalAlignment="Top"/>
+        <Button Name="ADD" Content="ADD" HorizontalAlignment="Left" Margin="154,230,0,0" VerticalAlignment="Top" Width="82" Click="ADD_Click"/>
+        <Button Name="Edit" Content="Edit" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" Width="82" Click="Edit_Click"/>
+        <Button Name="Delete" Content="Delete" HorizontalAlignment="Left" Margin="537,230,0,0" VerticalAlignment="Top" Width="82" Click="Delete_Click"/>
+        <DataGrid Name="datagridTASKSMANGER" HorizontalAlignment="Center" Height="138" Margin="0,286,0,0" VerticalAlignment="Top" Width="576"  SelectionChanged="datagridTASKSMANGER_SelectionChanged"/>
+        <TextBox Name="txtempname" HorizontalAlignment="Left" Margin="646,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Label Content="Employeename" HorizontalAlignment="Left" Margin="550,106,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="compoooo" HorizontalAlignment="Left" Margin="112,146,0,0" VerticalAlignment="Top" Width="120" >
+            <ComboBoxItem Content="complete"></ComboBoxItem>
+            <ComboBoxItem Content="in prograss"></ComboBoxItem>
+            <ComboBoxItem Content="pending"></ComboBoxItem>
+        </ComboBox>
+
+    </Grid>
+</Window>
